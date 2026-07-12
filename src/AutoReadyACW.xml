@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Auto Ready ACW" height="220">
+    <Require feature="settitle" />
+    <Require feature="dynamic-height" />
+    <Require feature="pubsub-2" />
+  </ModulePrefs>
+  <UserPref name="id" display_name="Finesse user login ID" default_value="" />
+  <Content type="html"><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="AutoReadyACW.css" />
+  <script type="text/javascript" src="/desktop/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="AutoReadyACW.js"></script>
+</head>
+<body class="auto-ready-body">
+  <div class="auto-ready-card">
+    <div class="auto-ready-title">Auto Ready ACW</div>
+    <div id="statusLine" class="status-line">Loading...</div>
+    <div id="timerLine" class="timer-line">Waiting for agent state...</div>
+    <div id="detailsLine" class="details-line">State: unknown | Reason: unknown | Team: unknown</div>
+
+    <div id="manualUserPanel" class="manual-panel hidden">
+      <div class="manual-label">Manual test mode: enter a Finesse user login ID.</div>
+      <input id="manualUserId" class="manual-input" type="text" placeholder="agent login ID" />
+      <button id="manualStartBtn" class="manual-button" type="button">Start</button>
+    </div>
+
+    <div id="logPanel" class="log-panel"></div>
+  </div>
+</body>
+</html>
+  ]]></Content>
+</Module>
