@@ -1,0 +1,34 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Secrets and environment-specific config
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+secrets.*
+config.local.*
+
+# Logs, captures, exports, and screenshots
+*.log
+logs/
+*.har
+*.pcap
+*.pcapng
+screenshots/
+recordings/
+exports/
+
+# Archives/build outputs
+*.zip
+*.tar.gz
+dist/
+build/
+node_modules/
